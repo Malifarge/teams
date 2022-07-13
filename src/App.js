@@ -40,17 +40,7 @@ class App extends React.Component{
           {teams.slice(0,this.state.count).map(team =>(
             <TeamInfo
             key = {team.shortName}
-            image={team.crestUrl}
-            shortname={team.shortName}
-            tla={team.tla}
-            adress={team.address}
-            phone={team.phone}
-            mail={team.email}
-            founded={team.founded}
-            venue={team.venue}
-            Website={team.website}
-            maj={team.lastUpdated}
-            color={team.clubColors}
+            team={team}
             />
           ))}
         </section>
